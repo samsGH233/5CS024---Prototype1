@@ -1,0 +1,24 @@
+body {
+    background-color: rgb(154, 154, 154);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12%;
+}
+
+.text-box {
+    font-family: trebuchet ms;
+    color: white;
+    width: 500px;
+    background-color: rgb(0, 162, 255);
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: 40px solid rgb(0, 140, 255);
+}
+
+.input-box {
+    margin-bottom: 10px;
+    background-color: rgb(0, 140, 255);
+    border: 10px solid rgb(0, 140, 255);
+}
