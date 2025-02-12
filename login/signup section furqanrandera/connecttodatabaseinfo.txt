@@ -1,0 +1,29 @@
+// Here is where the database analyst will put his details to connect to his phpmyadmin database.
+// $conn = new mysqli($localhost, $233264, $Millymay2005, $db233264);
+
+$servername = "localhost";
+$username = "username";
+$password = "password";
+
+$conn = new mysqli($localhost, "$2351031", "$63m88v");
+
+---------------------------------------------------------------------------
+
+<?php
+
+// Here is where the database analyst will put his details to connect to his phpmyadmin database.
+
+$servername = "localhost";
+$username = "username";
+$password = "password";
+$dbname = "dbname";
+
+$conn = new mysqli($localhost, "$2351031", "$63m88v", "db2351031");
+
+// Here is just a message incase the connection to the database fails
+if (mysqli_connect_error()) {
+    echo "Could not connect to MySQL database: " . $mysqli -> connect_error;
+}
+echo "connected successfully";
+
+?>
