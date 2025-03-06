@@ -20,6 +20,8 @@ $result = $mysqli->query($sql);
 ?>
 
 <div class="container mt-4">
+    <h1 class = "text-center">Alumni</h1>
+    <p class = "text-center">Here are some of the alumni that attened our university!</p>
     <div class="row">
         <?php
         // Check if any results were returned
