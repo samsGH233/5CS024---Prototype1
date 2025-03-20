@@ -6,10 +6,11 @@
     <title>Feedback</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="feedback.css">
+    <link rel="stylesheet" href="form.css">
   </head>
   <?php include "navBar.php"; ?>
   <body>
+  <!-- Feedback form -->
   <form method="POST" action="feedback.php">
     <div class="container">
       <h1 class = "text-center">Feedback</h1>
@@ -26,9 +27,9 @@
 
       <div class="clearfix">
         <button type="button" class="btn btn-danger" onclick="window.location.href='homePage.php'">Cancel</button>
-        <button type="submit" class="btn btn-success"onclick="window.location.href='finalpage.php'">Submit</button>
+        <button type="submit" class="btn btn-success"onclick="window.location.href=">Submit</button>
       </div>
-    </div>
+    
   </form>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
