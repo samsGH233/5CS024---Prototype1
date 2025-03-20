@@ -11,13 +11,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Validate input
     if (empty($num_rate) || empty($comment1) || empty($comment2)) {
-        header("Location: feedbackform.php?error=Please fill in all fields");
+        header("Location: feedbackpage.php?error=Please fill in all fields");
         exit();
     }
 
     // Check if rating is between 1-10
     if ($num_rate < 1 || $num_rate > 10) {
-        header("Location: feedbackform.php?error=Rating must be between 1 and 10");
+        header("Location: feedbackpage.php?error=Rating must be between 1 and 10");
         exit();
     }
 
