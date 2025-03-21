@@ -23,6 +23,8 @@ if (isset($_SESSION["user_id"])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>homePage.php</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
 </head>
 <body>
 
@@ -52,5 +54,39 @@ Also take the php code from...
 
 <!-- Also make sure to delete this file once you have copied this code into the ACTUAL homepage. -->
 
+    <!-- This is the events table copy this too into the homepage. -->
+
+        <h2>Events you are currently attending.</h2>
+
+        <?php 
+        
+        $sql = "SELECT app_events.Course, app_events.Time, app_events.Information, app_events.Room_Number
+        FROM signup
+        JOIN app_events ON signup.Event = app_events.Event_ID
+        WHERE signup.id = {$_SESSION["user_id"]}";
+
+        $result = $mysqli->query($sql);
+        ?>
+
+        <?php if ($result->num_rows > 0): ?>
+            <table border="1">
+                <tr>
+                    <th>Course</th>
+                    <th>Time</th>
+                    <th>Information</th>
+                    <th>Room Number</th>
+                </tr>
+                <?php while ($row = $result->fetch_assoc()): ?>
+                    <tr>
+                        <td><?= htmlspecialchars($row['Course']) ?></td>
+                        <td><?= htmlspecialchars($row['Time']) ?></td>
+                        <td><?= htmlspecialchars($row['Information']) ?></td>
+                        <td><?= htmlspecialchars($row['Room_Number']) ?></td>
+                    </tr>
+                    <?php endwhile; ?>
+            </table>
+        <?php else: ?>
+            <p>You are currently attending no events.</p>
+        <?php endif; ?>
 </body>
 </html>
