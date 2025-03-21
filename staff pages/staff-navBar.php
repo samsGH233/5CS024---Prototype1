@@ -26,10 +26,10 @@
               </li>
             </ul>
             <ul class="navbar-nav ms-auto"> <!-- Align to the right -->
-        <?php if (isset($_SESSION['loggedIn']) && $_SESSION['loggedIn'] === true): ?>
+        <?php if (isset($_SESSION['user_id']) && $_SESSION['user_id'] === true): ?>
           <li class="nav-item">
             <span class="navbar-text text-black me-3">
-              Welcome, <?php echo ($_SESSION['Name']); ?>!
+              Welcome, <?php echo ($_SESSION['name']); ?>!
             </span>
           </li>
           <li class="nav-item">
