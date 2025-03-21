@@ -21,7 +21,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
             $_SESSION["user_id"] = $user["id"];
 
-            header("Location: index2.php");
+            header("Location: staff-homepage.php");
             exit;
         }
 
