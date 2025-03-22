@@ -1,5 +1,9 @@
 <?php
 
+// Here is code for the conditions the user must meet in order for
+// the attendees to create their account
+
+
 if (empty($_POST["name"])) {
     die("Name is required");
 }
@@ -23,6 +27,9 @@ if ( ! preg_match("/[0-9]/", $_POST["password"])) {
 if ($_POST["password"] !== $_POST["password_confirmation"]) {
     die("Passwords must match");
 }
+
+// password hash converts the users password in to a hash to implement
+// security procedures
 
 $password_hash = password_hash($_POST["password"], PASSWORD_DEFAULT);
 

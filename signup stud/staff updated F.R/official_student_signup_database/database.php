@@ -1,5 +1,7 @@
 <?php
 
+//This code is to connect to Josh's database
+
 $host = "localhost";
 $dbname = "db2332364";
 $username = "2332364";

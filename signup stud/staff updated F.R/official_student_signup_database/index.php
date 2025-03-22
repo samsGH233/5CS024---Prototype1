@@ -36,6 +36,7 @@ if (isset($_SESSION["user_id"])) {
 
     <?php else: ?>
 
+    <!-- Here is code to redirect the user back to the login or signup page. -->
         <p><a href="login.php">Log in</a> or <a href="signupPage.html">sign up</a></p>
 
     <?php endif; ?>
