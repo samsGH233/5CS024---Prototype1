@@ -1,3 +1,7 @@
+<!-- COMMENTS FOR THIS CODE ARE WRITTEN LIKE THIS -->
+
+
+<!-- linking navigation bar to home page -->
 <?php include "navbar.php"
  
  ?>
@@ -11,11 +15,10 @@
 </head>
 <body>
 
- <!-- Showcase-->
-
+ 
  <section class="showcase-sec bg-dark text-light p-5 text-center">
     <div class="container">
-        <!-- Flexbox-->
+        <!-- Horizontal block with bullet points & video -->
         <div class="d-sm-flex justify-content-between">
             <div>
                 <h1>Why join a university open day ?</h1>
@@ -32,23 +35,7 @@
     </div>
 </section>
 
-
-<!-- Boxes -->
-<!--
-<section class="py-5">
-    
-    <div class="container" style="margin-top: 100px;" >
-      <div class="row" style="height: 400px; width: 300px; ">
-        <button type="button" class="btn btn-primary mb-3">Button 1</button>
-        <button type="button" class="btn btn-secondary mb-3">Button 2</button>
-        <button type="button" class="btn btn-success">Button 3</button>
-      </div>
-    </div>
-
-</section>
-
--->
-
+<!-- BUTTONS -->
 
 <section class="p-5">
     <div class="container" >
